@@ -128,10 +128,12 @@ ul {
 }
 
 .contact-link {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
+  height: 16px;
   font-weight: 500;
   line-height: 1.14;
-
   color: var(--paragraf-color);
 }
 
@@ -338,7 +340,7 @@ ul {
 }
 
 .header-contacts-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 50px;
 }
@@ -358,7 +360,6 @@ ul {
 }
 
 .main-section {
-  /* background: var(--background-title-color);  */
   text-align: center;
 }
 
@@ -411,8 +412,6 @@ ul {
 
 .contacts-footer {
   display: block;
-
-  /* padding-top: 20px;  */
 }
 
 .button-style-container {
@@ -455,6 +454,7 @@ ul {
   height: 12px;
   fill: currentColor;
   margin-right: 10px;
+  margin-bottom: 2px;
 }
 
 .icon-mail-box:hover {

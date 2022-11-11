@@ -152,6 +152,7 @@ ul {
 
   width: 696px;
   margin: 0 auto;
+  margin-top: 200px;
   margin-bottom: 30px;
 }
 
@@ -174,7 +175,7 @@ ul {
   background: var(--title-text-color);
   color: var(--primary-text-color);
 }
-
+/* EDIT HW4  ----padding top--------------------------------------------- */
 /* benefit section  */
 .benefits-title {
   font-size: 14px;
@@ -232,6 +233,7 @@ ul {
 .team-position {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 20px;
   color: var(--paragraf-color);
 }
 
@@ -239,29 +241,19 @@ ul {
 
 .footer {
   background-color: var(--background-title-color);
+  margin-top: 0;
   padding: 60px 0;
 }
 .adres {
   font-style: normal;
   color: var(--white-color);
   display: block;
-  margin-top: 20px;
+
   margin-bottom: 9px;
 }
 .studio-logo-footer {
   color: var(--white-color);
 }
-
-/* .webstudio-logo-footer {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  text-decoration: none;
-  margin-right: 0;
-  color: var(--background-color);
-  display: block;
-} */
 
 .footer-contacts-link {
   text-decoration: none;
@@ -323,6 +315,7 @@ ul {
   line-height: 1.2;
   text-decoration: none;
   margin-right: 93px;
+  padding-bottom: 10px;
   color: var(--background-color);
   display: block;
 }
@@ -358,10 +351,8 @@ ul {
 }
 
 .main-section {
-  background: var(--background-title-color);
+  /* background: var(--background-title-color);  */
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
 }
 
 .benefits-list {
@@ -370,6 +361,7 @@ ul {
 
 .benefits-box {
   display: flex;
+  height: 248px;
   justify-content: space-between;
   gap: 30px;
 }
@@ -390,6 +382,9 @@ ul {
 }
 
 .team-section {
+  height: 708px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--background-teams-color);
 }
 
@@ -406,10 +401,6 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-/* .logo-footer { */
-/* padding-top: 60px;  */
-/* } */
 
 .contacts-footer {
   display: block;
@@ -449,4 +440,195 @@ ul {
 
 .title-paragraph-projects {
   padding: 20px 24px;
+}
+
+/* hw4 */
+/* .header-contacts-link::before {
+  content: ;
+  width: 16px;
+  height: 12px;
+  outline: 1px solid red;
+  background-image: url(../images/envelope.jpg);
+  background-size: contain;
+/* } */
+/* .benefits-list::before {
+  display: block;
+  content: "";
+  width: 270px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.benefits-list:nth-child(1)::before {
+  background-image: url("../images/antenna.jpg");
+}
+
+.benefits-list:nth-child(2)::before {
+  background-image: url("../images/clock.jpg");
+} */
+
+.icon-mail-box {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-mail-box:hover {
+  fill: var(--background-color);
+}
+
+.main-section {
+  max-width: 1600px;
+  height: 600px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fone-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-teams-color);
+}
+
+.benefits-icon {
+  max-width: 70px;
+  margin-top: 20px;
+  padding: 0%;
+}
+
+/* team icon ----------------------------------------------  */
+
+.team-icon {
+  display: inline-block;
+  align-items: center;
+}
+.team-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.none-decoration:hover,
+.none-decoration:focus {
+  background-color: #2196f3;
+  color: var(--white-color);
+}
+
+.none-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #afb1b8;
+}
+
+/* Company--------------------------------- */
+
+.company {
+  display: flex;
+  width: 1170;
+  height: 184px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 50px;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  content: "";
+}
+.client-titlt {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  color: var(--primary-text-color);
+}
+.company-list {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+}
+.company-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: #afb1b8;
+  text-decoration: none;
+}
+.company-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.border-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.company-link :hover,
+.company-link :focus {
+  color: #2196f3;
+}
+
+.border-client:hover,
+.border-client:focus {
+  border: 1px solid #2196f3;
+  background-color: #ffffff;
+}
+
+/* footer --------------------*/
+.footer-icon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 80px;
+}
+.footer-social-icon {
+  display: inline-block;
+  align-items: center;
+}
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #afb1b8;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #2196f3;
+  color: var(--white-color);
 }

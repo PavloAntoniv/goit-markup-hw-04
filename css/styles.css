@@ -299,13 +299,14 @@ ul {
   line-height: 1.2;
   text-decoration: none;
   margin-right: 93px;
-  padding-bottom: 10px;
+
   color: var(--background-color);
   display: block;
 }
 
 .footer .webstudio-logo {
   margin-right: 0;
+  margin-bottom: 20px;
 }
 /* HW3  */
 
@@ -478,9 +479,8 @@ ul {
 }
 
 .benefits-icon {
-  max-width: 70px;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  width: 70px;
+  height: 70px;
 }
 
 /* team icon ----------------------------------------------  */
